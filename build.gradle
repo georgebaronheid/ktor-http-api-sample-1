@@ -17,11 +17,15 @@ repositories {
 }
 
 dependencies {
+//    Core components to our project
     implementation "io.ktor:ktor-server-core:$ktor_version"
+//    Server Engine
     implementation "io.ktor:ktor-server-netty:$ktor_version"
+//    SLF4J
     implementation "ch.qos.logback:logback-classic:$logback_version"
+//    Object to JSON and vice versa.
     implementation "io.ktor:ktor-serialization:$ktor_version"
-
+//    Tests our ktor application
     testImplementation "io.ktor:ktor-server-tests:$ktor_version"
 }
 
